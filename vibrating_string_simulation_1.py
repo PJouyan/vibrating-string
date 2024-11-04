@@ -1,10 +1,11 @@
 ### Simulation 1: different x0s; c2 & c3 = 0 ###
 
 '''
-To merge the audio and video outputs:
+To combine the video and audio outputs:
 ffmpeg -i strings_simulation_1.mp4 -i strings_simulation_1.wav -c copy -map 0:v:0 -map 1:a:0 strings_simulation_1_combined.mp4
 '''
 
+from vibrating_string_functions import *
 import numpy as np
 from matplotlib import pyplot as plt, animation
 
